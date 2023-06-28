@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Space Mono', monospace;
+}
+
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsl(185, 41%, 84%);
+}
+
+header , footer {
+  display: flex;
+  width: 100vw;
+  height: 20vh;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  text-align: center;
+  letter-spacing: 5px;
+  flex-wrap: wrap;
+  width: 4vw;
+  font-size: 25px;
+  font-weight: 100;
+}
+
+main {
+  display: flex;
+  width: 60vw;
+  height: 60vh;
+  border-radius: 50px;
+  background-color: white;
+}
+
+#leftSide , #rightSide {
+  display: flex;
+  padding: 60px;
+  width: 30vw;
+  height: 60vh;
+}
+
+#leftSide {
+  display: flex;
+  flex-direction: column;
+}
+
+#rightSide {
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 50px;
+  transform: scale(85%, 85%);
+}
+
+#tipsTitle {
+  margin: 20px 0 0px 0;
+  color: #8d9393;
+}
+
+#tipsButtons {
+  display: flex;
+  width: 25vw;
+  flex-wrap: wrap;
+  margin: 30px 0 0 0;  
+  justify-content: space-around;
+}
+
+#tipsButtons button {
+  width: 7vw;
+  height: 5vh;
+  border: none;
+  margin: 0.3vw;
+  border-radius: 10px;
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  font-size: 2vh;
+  cursor: pointer;
+}
+
+#tipsButtons button:active {
+  background-color: hsl(174, 36%, 63%);
+}
+
+#tipsButtons input {
+  width: 7vw;
+  height: 5vh;
+  margin: 0.3vw;
+  border-radius: 10px;
+  background-color: hsl(202, 50%, 97%);
+  border: none;
+}
+
+#billText {
+  width: 25vw;
+  height: 7vh;
+  background-color: hsl(202, 50%, 97%);
+  border: transparent;
+  border-radius: 10px;
+  font-weight: 700;
+  text-align: right;
+  font-size: 40px;
+  color: hsl(183, 100%, 15%);
+  padding: 1vw;
+}
+
+#billText:active {
+  border: 1px solid hsl(174, 36%, 63%);  
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
