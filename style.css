@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Space Mono', monospace;
+  font-family: Space Mono, monospace;
 }
 
 body {
@@ -94,6 +94,11 @@ main {
   border-radius: 10px;
   background-color: hsl(202, 50%, 97%);
   border: none;
+  text-align: center;
+}
+
+#tipsButtons input::placeholder {
+  color: hsl(183, 100%, 15%);
 }
 
 #billText {
