@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Space Mono, monospace;
+  font-weight: 700;
 }
 
 body {
@@ -58,10 +59,15 @@ main {
   transform: scale(85%, 85%);
 }
 
-#tipsTitle {
+.justText {
+  margin: 20px 0 0px 0;
+  color: #8d9393;  
+}
+
+/* #tipsTitle , #numberOfPeople {
   margin: 20px 0 0px 0;
   color: #8d9393;
-}
+} */
 
 #tipsButtons {
   display: flex;
@@ -99,9 +105,11 @@ main {
 
 #tipsButtons input::placeholder {
   color: hsl(183, 100%, 15%);
+  font-size: 2vh;
+  /* font-weight: 700; */
 }
 
-#billText {
+#billText , #peopleText {
   width: 25vw;
   height: 7vh;
   background-color: hsl(202, 50%, 97%);
@@ -116,6 +124,11 @@ main {
 
 #billText:active {
   border: 1px solid hsl(174, 36%, 63%);  
+}
+
+#peopleText::before {
+  content: "this is the content of before";
+
 }
 
 .attribution {
